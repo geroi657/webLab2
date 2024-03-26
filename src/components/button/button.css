@@ -1,0 +1,14 @@
+.myFirstButton{
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: black;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    transition: all 0.25s;
+}
+
+.myFirstButton:hover{
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
