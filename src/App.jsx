@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import './App.css'
-import MyButton from './components/button/button.jsx'
+import Button from '@mui/material/Button';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Header>Это я!</ Header>
       <h1>Лучшая кнопка, которую вы когда-либо увидите</h1>
       <div className="card">
-        <MyButton onclick={() => alert("Не трогай кнопку, э.")} />
+        <Button variant="contained">Кнопка</Button>
         <p>
           И не наврал же!
         </p>
@@ -17,6 +19,7 @@ function App() {
       <p className="read-the-docs">
         Продолжение следует...
       </p>
+      <Footer>А это я!</ Footer>
     </>
   )
 }
